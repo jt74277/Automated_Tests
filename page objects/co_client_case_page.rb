@@ -52,8 +52,6 @@ class CoClientCasePage < CasePage
     }.merge(inputs)
 
     first_name_input.set data[:first_name]
-    sleep 1
-    first_name_input.set data[:first_name]  # The First Name field gets cleared for some reason so I enter it again
     last_name_input.set data[:last_name]
     email_input.set data[:email]
     birthdate_input.set data[:birthdate]
